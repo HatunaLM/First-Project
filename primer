@@ -1,0 +1,30 @@
+#include <iostream>
+#include <string>
+#include <time.h>
+
+
+using namespace std;
+
+int main()
+{
+    
+    srand(time(NULL));
+    
+    int size = 10;
+    int *arr;
+    
+    arr =  new int [size];
+    
+    for(int i = 0; i<size; i++)
+    
+    {
+        arr [i] = rand()%25;
+        
+        cout<<arr[i]<<endl;
+        }
+    
+    delete [] arr;
+    
+   
+  
+}
